@@ -1,69 +1,31 @@
-# jp-population
+# 株式会社PENQE スキルチェックテスト
 
-## Build Setup
+## テスト内容
+script/index.js内でfetchしているdata（都道府県別の人口データ）を用い、表やグラフ等、見やすくなるように可視化してください。
 
-```bash
-# install dependencies
-$ npm install
+## 注意事項
+通常のブラウザでindex.htmlを開くと、CORSエラーが発生してデータを取得することができません。以下の方法で各種ブラウザを設定し、CORSエラーを解除した状態で開発を行ってください。（以下の方法以外でも解除できる方法があれば、どのような方法でも問題ありません。）
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+### chromeで開発する場合
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+#### mac
+1. ターミナルを開き、以下のコマンドを入力する。
+`open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_sess_1" --disable-web-security`
+2. CORSが解除されたchromeが立ち上がるので、そのブラウザで開発する
 
-# generate static project
-$ npm run generate
-```
+#### windows
+以下を参照し、CORS制限を解除する。
+https://blog-shika.biz/?p=69
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+### safariで開発する場合(macのみ)
+以下を参照し、CORS制限を解除する。
+https://qiita.com/kai_kou/items/54b61a274b77977add54#safari%E3%81%AE%E8%A8%AD%E5%AE%9A%E6%96%B9%E6%B3%95
 
-## Special Directories
+## 補足
+- jQueryやd3.js等、必要に応じて外部プラグインを使用して構いません。
+- 可視化の方法、個数、デザインの指定はありません。
+- 分からないことは調べていただいて構いませんが、自力で作るようにして下さい。（提出後制作したコードをご説明いただきます。）
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+## 評価対象
+- プログラミングスキル
+- デザイン性
