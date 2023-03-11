@@ -1,6 +1,6 @@
 window.onload = function() {
   async function getPopulation () {
-    return await (await fetch('../population.json')).json();
+    return await (await fetch('../src/json/population.json')).json();
   }
 
   getPopulation()
