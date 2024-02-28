@@ -348,7 +348,7 @@ window.onload = function () {
                 <td class="number">${index}</td>
                 <td class="country"><a href="https://www.google.com/search?q=${
                   country.pref
-                }" target="_blank"><img src="/png/${
+                }" target="_blank"><img src="./assets/47/${
           country.pref
         }.png"/ height="20px"> ${country.pref}</a></td>
                 <td class="number"><span class="hovertext hover-2" data-hover="全国人口の${
